@@ -10,10 +10,11 @@ public class Explosion : MonoBehaviour
     void Start()
     {
         StartCoroutine(GrowExplosion());
+        Explode();
     }
     void Update()
     {
-        Explode();
+        
     }
 
     void Explode()
