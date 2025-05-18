@@ -1,14 +1,30 @@
 using Unity.VisualScripting;
+using UnityEditor.Tilemaps;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Enemyfolloü : MonoBehaviour
 {
+    Transform player;
     [SerializeField] private GameObject Player;
     [SerializeField] private float Speed;
     private float maxdistance;
 
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+    }
     void Update()
     {
+        Vector3 direct = player.position - transform.position;
+        if (direct.x >0 && transform.localScale.x < 0)
+        {
+            Flip();
+        }
+        else if (direct.x < 0 && transform.localScale.x > 0)
+        {
+            Flip();
+        }
         maxdistance = Vector2.Distance(transform.position, Player.transform.position);
         Vector2 direction = Player.transform.position - transform.position;
         direction.Normalize();
@@ -16,7 +32,13 @@ public class Enemyfolloü : MonoBehaviour
         if (maxdistance < 7 && maxdistance > 2)
         {
             transform.position = Vector2.MoveTowards(this.transform.position, Player.transform.position, Speed * Time.deltaTime);
-            transform.rotation = Quaternion.Euler(Vector3.forward * angle);
+            transform.rotation = Quaternion.identity;
         }
+    }
+    void Flip()
+    {
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
     }
 }

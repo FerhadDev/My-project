@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7361337442651428646}
   - component: {fileID: 8760778902779739953}
   m_Layer: 0
-  m_Name: Ultimate
+  m_Name: GongPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56,10 +56,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7949185439262478662}
   - component: {fileID: 5634311187169424191}
-  - component: {fileID: 2772075989605071172}
   - component: {fileID: 696271960693145291}
+  - component: {fileID: 8985220576812593256}
   m_Layer: 0
-  m_Name: Ultimate
+  m_Name: GongPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 8, y: 8, z: 8}
+  m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 7361337442651428646}
@@ -125,7 +125,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 1, b: 0.9735937, a: 0.47058824}
+  m_Color: {r: 0.98205996, g: 1, b: 0, a: 0.47058824}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -135,23 +135,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2772075989605071172
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8407181619153574647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8b0b410ab53ae1459535befcc0a91c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 4
-  damage: 100
-  enemyLayer:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!58 &696271960693145291
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -188,3 +171,19 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &8985220576812593256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8407181619153574647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18218749c3604c141ba7bd651d9847bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 2.5
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 64
