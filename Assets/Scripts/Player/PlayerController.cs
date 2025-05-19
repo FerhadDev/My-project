@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public float _MovementSpeed;
     public Rigidbody2D _PlayyerRB;
     private Vector2 _MoveDirection;
+    [SerializeField] private Animator _Playeranim;
 
     [Header("Explosion Damage")]
     [SerializeField] private float ExplosioncooldownTime = 5f;
@@ -37,6 +38,7 @@ public class PlayerController : MonoBehaviour
         {
             Instantiate(ExplosionPrefab, transform.position, Quaternion.identity, transform);
             ExplosionnextAttackTime = Time.time + ExplosioncooldownTime;
+            _Playeranim.SetBool("İsAttack", true);
         }
         if (Input.GetKeyDown(KeyCode.E) && Time.time >= nextHealTime)
         {
@@ -65,6 +67,17 @@ public class PlayerController : MonoBehaviour
     private void Move()
     {
         _PlayyerRB.linearVelocity = new Vector2(_MoveDirection.x * _MovementSpeed, _MoveDirection.y * _MovementSpeed);
+
+        if (_MoveDirection != Vector2.zero)
+        {
+            _Playeranim.SetBool("IsWalking", true);
+            _Playeranim.SetBool("İsAttack", false);
+        }
+        else
+        {
+            _Playeranim.SetBool("IsWalking", false);
+            _Playeranim.SetBool("İsAttack", false);
+        }   
     }
     private void Flip()
     {
