@@ -113,6 +113,10 @@ public class PlayerController : MonoBehaviour
     {
         HealBar.fillAmount -= 0.2f;
         currentHealth -= amount;
+        if (currentHealth == 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }
 

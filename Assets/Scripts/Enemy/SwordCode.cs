@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class SwordCode : MonoBehaviour
 {
+    [SerializeField] private int _EnemyDamage = 10;
     private PlayerController playerController;
     private void Start()
     {
@@ -11,7 +12,7 @@ public class SwordCode : MonoBehaviour
     {
         if ( collision.gameObject.tag == "Player")
         {
-            playerController.Damage(20);
+            playerController.Damage(_EnemyDamage);
         }
     }
 }

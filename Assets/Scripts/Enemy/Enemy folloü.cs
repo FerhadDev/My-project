@@ -20,32 +20,35 @@ public class Enemyfolloü : MonoBehaviour
     }
     void Update()
     {
-        Vector3 direct = player.position - transform.position;
-        if (direct.x > 0 && transform.localScale.x < 0)
+        if (player != null)
         {
-            Flip();
-        }
-        else if (direct.x < 0 && transform.localScale.x > 0)
-        {
-            Flip();
-        }
-        maxdistance = Vector2.Distance(transform.position, Player.transform.position);
-        Vector2 direction = Player.transform.position - transform.position;
-        direction.Normalize();
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        if (maxdistance < 7 && maxdistance > 1)
-        {
-            anim.SetBool("See", true);
-            transform.position = Vector2.MoveTowards(this.transform.position, Player.transform.position, Speed * Time.deltaTime);
-            transform.rotation = Quaternion.identity;
-        }
-        else
-        {
-            anim.SetBool("See", false);
-        }
-        if (maxdistance < 2)
-        {
-            StartCoroutine(Attack());
+                Vector3 direct = player.position - transform.position;
+            if (direct.x > 0 && transform.localScale.x < 0)
+            {
+                Flip();
+            }
+            else if (direct.x < 0 && transform.localScale.x > 0)
+            {
+                Flip();
+            }
+                maxdistance = Vector2.Distance(transform.position, Player.transform.position);
+                Vector2 direction = Player.transform.position - transform.position;
+                direction.Normalize();
+                float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            if (maxdistance < 7 && maxdistance > 1)
+            {
+                anim.SetBool("See", true);
+                transform.position = Vector2.MoveTowards(this.transform.position, Player.transform.position, Speed * Time.deltaTime);
+                transform.rotation = Quaternion.identity;
+            }
+            else
+            {
+                anim.SetBool("See", false);
+            }
+            if (maxdistance < 2)
+            {
+                StartCoroutine(Attack());
+            }
         }
     }
     void Flip()
