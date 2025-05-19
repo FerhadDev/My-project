@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
         {
             Instantiate(ExplosionPrefab, transform.position, Quaternion.identity, transform);
             ExplosionnextAttackTime = Time.time + ExplosioncooldownTime;
-            _Playeranim.SetBool("İsAttack", true);
+            _Playeranim.SetTrigger("Attack");
         }
         if (Input.GetKeyDown(KeyCode.E) && Time.time >= nextHealTime)
         {
@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
         {
             Damage(20);
         }
-            ProcessInputs();
+        ProcessInputs();
         FlipManager();
     }
     void FixedUpdate()
@@ -77,13 +77,11 @@ public class PlayerController : MonoBehaviour
         if (_MoveDirection != Vector2.zero)
         {
             _Playeranim.SetBool("IsWalking", true);
-            _Playeranim.SetBool("İsAttack", false);
         }
         else
         {
             _Playeranim.SetBool("IsWalking", false);
-            _Playeranim.SetBool("İsAttack", false);
-        }   
+        }
     }
     private void Flip()
     {
