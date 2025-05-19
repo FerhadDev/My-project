@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float UltimatecooldownTime = 5f;
     private float UltimatenextAttackTime = 0f;
     [SerializeField] private GameObject UltimateUltimatePrefab;
+    [SerializeField] private Image HealBar;
 
     private void Start()
     {
@@ -50,7 +52,11 @@ public class PlayerController : MonoBehaviour
             Instantiate(UltimateUltimatePrefab, transform.position, Quaternion.identity, transform);
             UltimatenextAttackTime = Time.time + UltimatecooldownTime;
         }
-        ProcessInputs();
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Damage(20);
+        }
+            ProcessInputs();
         FlipManager();
     }
     void FixedUpdate()
@@ -99,10 +105,16 @@ public class PlayerController : MonoBehaviour
     public void Heal(int amount)
     {
         currentHealth += amount;
+        HealBar.fillAmount += 0.2f;
         if (currentHealth > maxHealth)
             currentHealth = maxHealth;
 
         Debug.Log("Healing applied! Current health: " + currentHealth);
+    }
+    public void Damage(int amount)
+    {
+        HealBar.fillAmount -= 0.2f;
+        currentHealth -= amount;
     }
 }
 
