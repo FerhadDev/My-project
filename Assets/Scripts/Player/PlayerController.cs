@@ -111,7 +111,7 @@ public class PlayerController : MonoBehaviour
     }
     public void Damage(int amount)
     {
-        HealBar.fillAmount -= 0.2f;
+        HealBar.fillAmount -= 0.1f;
         currentHealth -= amount;
         if (currentHealth == 0)
         {

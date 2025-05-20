@@ -6,6 +6,7 @@ public class UltiDamage : MonoBehaviour
     [SerializeField] private float radius = 7f;
     public int damage = 100;
     [SerializeField] private LayerMask enemyLayer;
+    [SerializeField] private LayerMask SlaveLayer;
 
     void Start()
     {
@@ -15,7 +16,13 @@ public class UltiDamage : MonoBehaviour
     void Explode()
     {
         Collider2D[] enemiesHit = Physics2D.OverlapCircleAll(transform.position, radius, enemyLayer);
+        Collider2D[] Slave = Physics2D.OverlapCircleAll(transform.position, radius, SlaveLayer);
 
+        foreach (Collider2D slave in Slave)
+        {
+            Animator animator = slave.GetComponent<Animator>();
+            animator.SetBool("Happy", true);
+        }
         foreach (Collider2D enemy in enemiesHit)
         {
             EnemyHealth health = enemy.GetComponent<EnemyHealth>();
