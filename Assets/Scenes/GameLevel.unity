@@ -4564,7 +4564,6 @@ GameObject:
   - component: {fileID: 459575964}
   - component: {fileID: 459575963}
   - component: {fileID: 459575966}
-  - component: {fileID: 459575967}
   m_Layer: 0
   m_Name: King
   m_TagString: Untagged
@@ -4675,25 +4674,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 459575962}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f05a38b210917584db201748e895191e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackEffect: {fileID: 462516140}
---- !u!114 &459575967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 459575962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 182e6edd498a29f46a94d4495135198e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnemySpeed: 5
-  Stopingdistance: 20
-  retreatDistance: 10
+  EnemySpeed: 2
+  max: 8
+  min: 3
+  Player: {fileID: 42044321}
+  StarttimeBTWShots: 2
+  projecttile: {fileID: 8459076550808900543, guid: e3f4023524ef325448354acd7b1a14a3, type: 3}
 --- !u!1 &462516138
 GameObject:
   m_ObjectHideFlags: 0
@@ -10125,7 +10114,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -76827,6 +76816,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1261510419}
   - component: {fileID: 1261510420}
+  - component: {fileID: 1261510421}
   m_Layer: 0
   m_Name: "Qam\xE7\u0131"
   m_TagString: Untagged
@@ -76879,7 +76869,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -76895,6 +76885,21 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 3.5104027, y: 1.8226833}
   m_EdgeRadius: 0
+--- !u!114 &1261510421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261510418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 773bb212aba95884c888e56a0d0c61a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackEffect: {fileID: 462516140}
+  _EnemyDamage: 10
+  Bossanim: {fileID: 459575963}
 --- !u!1 &1268566733
 GameObject:
   m_ObjectHideFlags: 0
@@ -78156,7 +78161,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Sword: {fileID: 554767755}
   Player: {fileID: 42044321}
-  Speed: 2
+  Speed: 3
+  max: 6
+  min: 2
 --- !u!95 &1500050238
 Animator:
   serializedVersion: 7
