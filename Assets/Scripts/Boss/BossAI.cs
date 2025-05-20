@@ -3,30 +3,58 @@ using UnityEngine;
 public class BossAI : MonoBehaviour
 {
     [SerializeField] private float EnemySpeed;
-    [SerializeField] private float Stopingdistance;
-    [SerializeField] private float retreatDistance;
-    private Transform Player;
-
+    [SerializeField] private float max = 7;
+    [SerializeField] private float min = 1;
+    [SerializeField] private GameObject Player;
+    private float maxdistance;
+    private Transform player;
+    private float timeBTWShots;
+    public float StarttimeBTWShots;
+    public Transform projecttile;
     void Start()
     {
-        Player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+        timeBTWShots = StarttimeBTWShots;
     }
     void Update()
     {
-        if(Player != null)
+        if (Player != null)
         {
-            if (Vector2.Distance(transform.position, Player.position) > Stopingdistance)
+            Vector3 direct = player.position - transform.position;
+            if (direct.x > 0 && transform.localScale.x < 0)
+            {
+                Flip();
+            }
+            else if (direct.x < 0 && transform.localScale.x > 0)
+            {
+                Flip();
+            }
+            maxdistance = Vector2.Distance(transform.position, Player.transform.position);
+            Vector2 direction = Player.transform.position - transform.position;
+            direction.Normalize();
+            float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+            if (maxdistance < max && maxdistance > min)
+            {
+                transform.position = Vector2.MoveTowards(this.transform.position, Player.transform.position, EnemySpeed * Time.deltaTime);
+                transform.rotation = Quaternion.identity;
+
+                if (timeBTWShots <= 0)
                 {
-                    transform.position = Vector2.MoveTowards(transform.position, Player.position, EnemySpeed * Time.deltaTime);
+                    Instantiate(projecttile, transform.position, Quaternion.identity);
+                    timeBTWShots = StarttimeBTWShots;
                 }
-                else if (Vector2.Distance(transform.position, Player.position) < Stopingdistance && Vector2.Distance(transform.position, Player.position) > retreatDistance)
+                else
                 {
-                    transform.position = this.transform.position;
+                    timeBTWShots -= Time.deltaTime;
                 }
-                else if (Vector2.Distance(transform.position, Player.position) < retreatDistance)
-                {
-                    transform.position = Vector2.MoveTowards(transform.position, Player.position, -EnemySpeed * Time.deltaTime);
-                }
+            }
         }
     }
+    void Flip()
+    {
+        Vector3 scale = transform.localScale;
+        scale.x *= -1;
+        transform.localScale = scale;
+    }
+
 }

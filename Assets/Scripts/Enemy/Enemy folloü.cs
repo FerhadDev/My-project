@@ -11,7 +11,10 @@ public class Enemyfolloü : MonoBehaviour
     Transform player;
     [SerializeField] private GameObject Player;
     [SerializeField] private float Speed;
+    [SerializeField] private float max = 7;
+    [SerializeField] private float min = 1;
     private float maxdistance;
+
 
     private void Start()
     {
@@ -35,7 +38,7 @@ public class Enemyfolloü : MonoBehaviour
                 Vector2 direction = Player.transform.position - transform.position;
                 direction.Normalize();
                 float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-            if (maxdistance < 7 && maxdistance > 1)
+            if (maxdistance < max && maxdistance > min)
             {
                 anim.SetBool("See", true);
                 transform.position = Vector2.MoveTowards(this.transform.position, Player.transform.position, Speed * Time.deltaTime);
@@ -61,7 +64,7 @@ public class Enemyfolloü : MonoBehaviour
     {
         anim.SetTrigger("Atack");
         Sword.SetActive(true);
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(3);
         Sword.SetActive(false);
     }
 }
