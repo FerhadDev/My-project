@@ -1,0 +1,910 @@
+fileFormatVersion: 2
+guid: a40a96e948e16034cadb7e7197b445cd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -215181320636830667
+    second: TThawV-Sheet_0
+  - first:
+      213: 4225556610324298571
+    second: TThawV-Sheet_1
+  - first:
+      213: 4014238648793447029
+    second: TThawV-Sheet_2
+  - first:
+      213: 1691041346270538383
+    second: TThawV-Sheet_3
+  - first:
+      213: 8828602351905736256
+    second: TThawV-Sheet_4
+  - first:
+      213: -2491643117360023384
+    second: TThawV-Sheet_5
+  - first:
+      213: 7862966450676279706
+    second: TThawV-Sheet_6
+  - first:
+      213: 3396503164676942939
+    second: TThawV-Sheet_7
+  - first:
+      213: -697697948076134339
+    second: TThawV-Sheet_8
+  - first:
+      213: 6266197822914030659
+    second: TThawV-Sheet_9
+  - first:
+      213: 866508425776527377
+    second: TThawV-Sheet_10
+  - first:
+      213: -2196548100385655279
+    second: TThawV-Sheet_11
+  - first:
+      213: 3529323376308709267
+    second: TThawV-Sheet_12
+  - first:
+      213: 4102263433279886329
+    second: TThawV-Sheet_13
+  - first:
+      213: 4061758144277071634
+    second: TThawV-Sheet_14
+  - first:
+      213: 680300681883454841
+    second: TThawV-Sheet_15
+  - first:
+      213: -7485759504900896156
+    second: TThawV-Sheet_16
+  - first:
+      213: 2484356208172136826
+    second: TThawV-Sheet_17
+  - first:
+      213: 5808992055425600312
+    second: TThawV-Sheet_18
+  - first:
+      213: 6299390737409250575
+    second: TThawV-Sheet_19
+  - first:
+      213: -2971973273298138662
+    second: TThawV-Sheet_20
+  - first:
+      213: 3247915413290835930
+    second: TThawV-Sheet_21
+  - first:
+      213: -4946695183237917054
+    second: TThawV-Sheet_22
+  - first:
+      213: -3501885216660171730
+    second: TThawV-Sheet_23
+  - first:
+      213: -7055045271339472548
+    second: TThawV-Sheet_24
+  - first:
+      213: 609296322982412288
+    second: TThawV-Sheet_25
+  - first:
+      213: -4128906925083773268
+    second: TThawV-Sheet_26
+  - first:
+      213: -4205174353365672088
+    second: TThawV-Sheet_27
+  - first:
+      213: 1749502664100286207
+    second: TThawV-Sheet_28
+  - first:
+      213: 6898379069512395876
+    second: TThawV-Sheet_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TThawV-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 31
+        width: 78
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53c642d9ab5830df0800000000000000
+      internalID: -215181320636830667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 7
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4bfea0695134aa30800000000000000
+      internalID: 4225556610324298571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 31
+        width: 78
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57a3af068c075b730800000000000000
+      internalID: 4014238648793447029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 7
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8a24f81529c77710800000000000000
+      internalID: 1691041346270538383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 31
+        width: 78
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0460588201f758a70800000000000000
+      internalID: 8828602351905736256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 31
+        width: 78
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a875ba39c7eb6dd0800000000000000
+      internalID: -2491643117360023384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 31
+        width: 78
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a99af5db35ede1d60800000000000000
+      internalID: 7862966450676279706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 31
+        width: 78
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5c2f0102adc22f20800000000000000
+      internalID: 3396503164676942939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 31
+        width: 78
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30376ca9674156f0800000000000000
+      internalID: -697697948076134339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 31
+        width: 78
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34ced1f58b106f650800000000000000
+      internalID: 6266197822914030659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 7
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 118fa4182d4760c00800000000000000
+      internalID: 866508425776527377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 31
+        width: 78
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1163478f32b4481e0800000000000000
+      internalID: -2196548100385655279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 7
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 397ec5e59ecaaf030800000000000000
+      internalID: 3529323376308709267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 31
+        width: 78
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f3d8bb9bda2ee830800000000000000
+      internalID: 4102263433279886329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 31
+        width: 78
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2174f2913834e5830800000000000000
+      internalID: 4061758144277071634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 31
+        width: 78
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97d8e14add9e07900800000000000000
+      internalID: 680300681883454841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 31
+        width: 78
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46ac06c346d3d1890800000000000000
+      internalID: -7485759504900896156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1705
+        y: 31
+        width: 78
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a79f2a30fc43a7220800000000000000
+      internalID: 2484356208172136826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 31
+        width: 78
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83b85be3f7fad9050800000000000000
+      internalID: 5808992055425600312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 7
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f051aa4008eeb6750800000000000000
+      internalID: 6299390737409250575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 7
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad90c1bdd0e61c6d0800000000000000
+      internalID: -2971973273298138662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 7
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adf57b53cd9e21d20800000000000000
+      internalID: 3247915413290835930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 7
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 286d7f680fec95bb0800000000000000
+      internalID: -4946695183237917054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 7
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2457c003fdc66fc0800000000000000
+      internalID: -3501885216660171730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 7
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c59e28774b1771e90800000000000000
+      internalID: -7055045271339472548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 7
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 000815e07c7a47800800000000000000
+      internalID: 609296322982412288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 7
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca63bbb070d23b6c0800000000000000
+      internalID: -4128906925083773268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1539
+        y: 7
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86f5e01a43834a5c0800000000000000
+      internalID: -4205174353365672088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1667
+        y: 7
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffe0c4b576b774810800000000000000
+      internalID: 1749502664100286207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TThawV-Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 7
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46ca64ce637fbbf50800000000000000
+      internalID: 6898379069512395876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TThawV-Sheet_0: -215181320636830667
+      TThawV-Sheet_1: 4225556610324298571
+      TThawV-Sheet_10: 866508425776527377
+      TThawV-Sheet_11: -2196548100385655279
+      TThawV-Sheet_12: 3529323376308709267
+      TThawV-Sheet_13: 4102263433279886329
+      TThawV-Sheet_14: 4061758144277071634
+      TThawV-Sheet_15: 680300681883454841
+      TThawV-Sheet_16: -7485759504900896156
+      TThawV-Sheet_17: 2484356208172136826
+      TThawV-Sheet_18: 5808992055425600312
+      TThawV-Sheet_19: 6299390737409250575
+      TThawV-Sheet_2: 4014238648793447029
+      TThawV-Sheet_20: -2971973273298138662
+      TThawV-Sheet_21: 3247915413290835930
+      TThawV-Sheet_22: -4946695183237917054
+      TThawV-Sheet_23: -3501885216660171730
+      TThawV-Sheet_24: -7055045271339472548
+      TThawV-Sheet_25: 609296322982412288
+      TThawV-Sheet_26: -4128906925083773268
+      TThawV-Sheet_27: -4205174353365672088
+      TThawV-Sheet_28: 1749502664100286207
+      TThawV-Sheet_29: 6898379069512395876
+      TThawV-Sheet_3: 1691041346270538383
+      TThawV-Sheet_4: 8828602351905736256
+      TThawV-Sheet_5: -2491643117360023384
+      TThawV-Sheet_6: 7862966450676279706
+      TThawV-Sheet_7: 3396503164676942939
+      TThawV-Sheet_8: -697697948076134339
+      TThawV-Sheet_9: 6266197822914030659
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
