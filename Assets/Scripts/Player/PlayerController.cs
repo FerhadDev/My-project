@@ -23,12 +23,18 @@ public class PlayerController : MonoBehaviour
     [Header("Heal Settings")]
     public float healCooldown = 5f; // 5 saniyəlik cooldown
     private float nextHealTime = 0f;
+
     [Header("Ultimate Damage")]
     [SerializeField] private float UltimatecooldownTime = 5f;
     private float UltimatenextAttackTime = 0f;
     [SerializeField] private GameObject UltimateUltimatePrefab;
     [SerializeField] private Image HealBar;
+    SoundManager Sound;
 
+    void Awake()
+    {
+        Sound = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
+    }
     private void Start()
     {
         FaceinRight = true;
@@ -41,6 +47,7 @@ public class PlayerController : MonoBehaviour
             Instantiate(ExplosionPrefab, transform.position, Quaternion.identity, transform);
             ExplosionnextAttackTime = Time.time + ExplosioncooldownTime;
             _Playeranim.SetTrigger("Attack");
+            Sound.SFXSound(Sound.LightAtack);
         }
         if (Input.GetKeyDown(KeyCode.E) && Time.time >= nextHealTime)
         {
@@ -51,6 +58,7 @@ public class PlayerController : MonoBehaviour
         {
             Instantiate(UltimateUltimatePrefab, transform.position, Quaternion.identity, transform);
             UltimatenextAttackTime = Time.time + UltimatecooldownTime;
+            Sound.SFXSound(Sound.Heavyatack);
         }
         if (Input.GetKeyDown(KeyCode.P))
         {
