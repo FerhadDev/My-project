@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class EnemyHealth : MonoBehaviour
+public class BossHealth : MonoBehaviour
 {
     [SerializeField] int health = 100;
 
@@ -18,5 +18,6 @@ public class EnemyHealth : MonoBehaviour
     {
         // Ölüm animasiyası və s.
         Destroy(gameObject);
+        SceneManager.LoadScene(0);
     }
 }

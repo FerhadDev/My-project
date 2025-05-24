@@ -11,6 +11,7 @@ public class BossAI : MonoBehaviour
     private float timeBTWShots;
     public float StarttimeBTWShots;
     public Transform projecttile;
+    
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;

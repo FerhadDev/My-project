@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
@@ -124,6 +125,7 @@ public class PlayerController : MonoBehaviour
         if (currentHealth == 0)
         {
             Destroy(gameObject);
+            SceneManager.LoadScene(0);
         }
     }
 }

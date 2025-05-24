@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8459076550808900543}
   - component: {fileID: 4060509449141168512}
   - component: {fileID: 241439068792654026}
-  - component: {fileID: 3561489996625557228}
+  - component: {fileID: 1575111404923281719}
   m_Layer: 0
   m_Name: Projecttile
   m_TagString: Untagged
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -4622772437685038165, guid: 720869679f2103a49b3f522f5ce9d3f5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -104,8 +104,8 @@ MonoBehaviour:
   Speed: 2
   max: 7
   min: 0
---- !u!58 &3561489996625557228
-CircleCollider2D:
+--- !u!61 &1575111404923281719
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -139,4 +139,14 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8375, y: 0.56}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.8375, y: 0.56}
+  m_EdgeRadius: 0

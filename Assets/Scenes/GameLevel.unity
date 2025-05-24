@@ -7088,6 +7088,7 @@ GameObject:
   - component: {fileID: 459575964}
   - component: {fileID: 459575963}
   - component: {fileID: 459575966}
+  - component: {fileID: 459575967}
   m_Layer: 0
   m_Name: King
   m_TagString: Untagged
@@ -7207,6 +7208,19 @@ MonoBehaviour:
   Player: {fileID: 42044321}
   StarttimeBTWShots: 2
   projecttile: {fileID: 8459076550808900543, guid: e3f4023524ef325448354acd7b1a14a3, type: 3}
+--- !u!114 &459575967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 459575962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 143da898c21eba6438f43ae732e2bffd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 200
 --- !u!1 &462516138
 GameObject:
   m_ObjectHideFlags: 0
